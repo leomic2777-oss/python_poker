@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS poker;
+USE poker;
+CREATE TABLE IF NOT EXISTS pokerstat 
+(
+    PNAME VARCHAR(50) PRIMARY KEY,
+    HANDSPLAY INT DEFAULT 0,
+    HANDSWON INT DEFAULT 0,
+    TWINS INT DEFAULT 0,	
+    TROUND INT DEFAULT 0
+);
+	use poker;
+	SELECT * FROM pokerstat;
+truncate table pokerstat;
